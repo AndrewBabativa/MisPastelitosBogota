@@ -1,0 +1,158 @@
+$ubuntu-font-family: 'Ubuntu', sans-serif;
+$panelWidth: 940px;
+$panelHeight: 600px;
+$panelBackgroundColor: #fff;
+$panelBorderRadius: 10px;
+$panelBoxShadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+$leftColumnWidth: 274px;
+$leftColumnHeight: 568px;
+$leftColumnBackgroundImage: url('../images/bg-principal-menu.png');
+$leftColumnBorderRadius: 0.8em;
+$stepCircleSize: 30px;
+$stepNumberSize: 16px;
+$stepNumberColor: white;
+$stepCircleDefault: transparent;
+$stepCircleSelected: #BEE2FD;
+$stepNumberSelected: #022959;
+$stepButtonWidth: 123px;
+$stepButtonHeight: 48px;
+$stepButtonColor: #022959;
+$stepButtonTextColor: white;
+$stepButtonBorderRadius: 5px;
+$goBackButtonTextColor: #9699AA;
+$goBackButtonWidth: 60px;
+$goBackButtonHeight: 18px;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel {
+  width: $panelWidth; 
+  height: $panelHeight; 
+  background-color: $panelBackgroundColor;
+  border-radius: $panelBorderRadius;
+  box-shadow: $panelBoxShadow, -$panelBoxShadow;
+  display: flex;
+}
+
+.left-column {
+  width: $leftColumnWidth;
+  height: $leftColumnHeight;
+  background-image: $leftColumnBackgroundImage;
+  border-radius: $leftColumnBorderRadius;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-left: 30px; 
+  margin-top: 50px;
+}
+
+.step-items{
+  margin: 2em;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  align-items: flex-start;
+}
+
+.step-circle {
+  width: $stepCircleSize;
+  height: $stepCircleSize;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $stepNumberSize;
+  color: $stepNumberColor;
+  background-color: $stepCircleDefault;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.step-circle.selected {
+  background-color: $stepCircleSelected;
+  color: $stepNumberSelected;
+}
+
+.step-label {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.step-label .step-title {
+  color: #ABBCFF;
+  font-family: $ubuntu-font-family;
+  font-size: 12px;
+}
+
+.step-label .step-subtitle {
+  color: white;
+  font-family: $ubuntu-font-family;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.step-number {
+  font-size: 14px;
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.step-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.step-button {
+  width: $stepButtonWidth;
+  height: $stepButtonHeight;
+  background-color: $stepButtonColor;
+  color: $stepButtonTextColor;
+  border: none;
+  border-radius: $stepButtonBorderRadius;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-back-button {
+  color: $goBackButtonTextColor;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $goBackButtonWidth;
+  height: $goBackButtonHeight;
+}
