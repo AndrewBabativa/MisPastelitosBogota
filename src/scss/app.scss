@@ -776,16 +776,18 @@ $formHeight: 264px;
   }
 
   .step-two-form-container .step-two-plan-container .step-two-plan-box {
-    width: 100%; // Ocupar todo el ancho disponible
+    width: 100%; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: transparent;
-    display: flex; 
-    flex-direction: row;
     height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
     &:hover {
       background-color: #f8f9ff;
     }
@@ -794,38 +796,41 @@ $formHeight: 264px;
       background-color: #f8f9ff;
       border-color: #483eff;
       border-width: 1px;
+      margin-right: 10px; 
+      align-self: flex-start; 
     }
 
     .step-two-icon {
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       background-size: cover;
-      margin-right: 10px; // Espacio entre el icono y el texto
+      margin-right: 10px; 
       border-radius: 10px;
     }
 
-    .step-two-plan-content {
-      display: flex; // Mostrar los textos en una fila
-      justify-content: flex-start; // Alinear al inicio del contenedor
-      align-items: center; // Centrar verticalmente
-      text-align: left;
-      flex-direction: column; // Mostrar los textos en columna en móvil
-
+    .step-two-plan-info {
+      display: flex;
+      flex-direction: column;
       .step-two-plan-title {
         color: #022959;
         font-size: 18px;
         margin-bottom: 5px;
         font-family: 'Comic Sans MS';
         font-weight: 600;
+        margin-top: 0;
       }
-
+  
       .step-two-plan-price {
         color: black;
         font-size: 14px;
         font-family: 'Comic Sans MS';
+        margin-top: 5px;
       }
     }
   }
+
+
+
  
 .step-three-container{
   width: auto;

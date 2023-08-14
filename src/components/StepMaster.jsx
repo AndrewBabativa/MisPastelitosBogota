@@ -236,12 +236,14 @@ const StepMaster = () => {
 										className='step-two-icon'
 										style={{ backgroundImage: `url(${plan.icon})` }}
 									/>
+									 <div className='step-two-plan-info'>
 									<Typography className='step-two-plan-title'>
 										{plan.name}
 									</Typography>
 									<Typography variant='body2' className='step-two-plan-price'>
 										${plan.price}/mo
 									</Typography>
+									</div>
 								</div>
 							))}
 						</div>
