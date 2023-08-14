@@ -56,7 +56,7 @@ const StepMaster = () => {
 				if (!isValid) return;
 			} else if (formData.step === 2) {
 				const arePlansSelected = formData.selectedPlan;
-				if (!arePlansSelected || arePlansSelected == null) {
+				if (arePlansSelected == null) {
 					setPlansError('Please select at least one plan');
 					return;
 				} else {
@@ -379,7 +379,7 @@ const StepMaster = () => {
 	}, [selectedItems]);
 
 	return (
-		<div className='container'>
+		<div className='container full-height'>
 			<div className='panel'>
 				<div className='left-column'>
 					<div className='step-items'>
