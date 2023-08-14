@@ -222,7 +222,7 @@ const StepMaster = () => {
 				);
 			case 2:
 				return (
-					<div className='step-two-formulario-container'>
+					<div className='step-two-form-container'>
 						<div className='step-two-plan-container'>
 							{plans.map((plan, index) => (
 								<div
