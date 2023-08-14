@@ -201,8 +201,12 @@ $formHeight: 264px;
 	margin-top: 0.5em;
 }
 
-// Step One
+input {
+  color: #022959 !important;
+  font-weight: bold !important;
+}
 
+// Step One
 .form-step-one {
 	width: 480px;
 	height: 264px;
@@ -428,7 +432,7 @@ $formHeight: 264px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border: 2px solid #483eff;
+	border: 1px solid #483eff;
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 0.2em;
@@ -475,7 +479,7 @@ $formHeight: 264px;
 	font-size: 15px;
 	color: #483eff;
 	margin-right: 1em;
-  font-weight: 500;
+	font-weight: 500;
 }
 
 // Four Step
@@ -621,7 +625,7 @@ $formHeight: 264px;
 	.panel {
 		flex-direction: column;
 		align-items: initial;
-    height: auto;
+		height: auto;
 	}
 
 	.left-column {
@@ -642,10 +646,10 @@ $formHeight: 264px;
 		z-index: 1;
 		background-color: white;
 		margin-left: 1em;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.step-indicator {
@@ -681,16 +685,16 @@ $formHeight: 264px;
 		display: none;
 	}
 
-  .step-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: auto;
-    background-color: white; 
-    margin-right: 0; 
-    margin-left: 0;
-  }
+	.step-buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		margin-top: auto;
+		background-color: white;
+		margin-right: 0;
+		margin-left: 0;
+	}
 
 	.step-button-finished {
 		margin-top: 1em;
@@ -702,17 +706,17 @@ $formHeight: 264px;
 	}
 
 	.form-step-one {
-	  width: 90%; 
-    height: calc(100% - 172px); 
-    border-radius: 5px;
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    border: 0;
-    box-shadow:0;
-    position: relative; 
+		width: 90%;
+		height: calc(100% - 172px);
+		border-radius: 5px;
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+		border: 0;
+		box-shadow: 0;
+		position: relative;
 	}
 
 	.step-items {
@@ -746,103 +750,105 @@ $formHeight: 264px;
 		margin-left: 0;
 	}
 
-  .panel-buttons {
-    position: absolute;
-    bottom: 0; 
-    width: 100%; 
-    padding: 20px;
-    background-color: white; 
-    border-top: 1px solid #ccc; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+	.panel-buttons {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 20px;
+		background-color: white;
+		border-top: 1px solid #ccc;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-  .full-height {
-    height: 100%;
+	.full-height {
+		height: 100%;
+	}
 
-  }
+	.step-two-form-container {
+		width: auto;
+    margin-top: 0;
+	}
 
-  .step-two-form-container {
-    width: auto;
-  }
+	.step-two-plan-container {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-top: 2em;
+		margin-right: 1em;
+	}
 
-  .step-two-plan-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 2em;
+	.step-two-form-container .step-two-plan-container .step-two-plan-box {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 15px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		background-color: transparent;
+		height: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+		&:hover {
+			background-color: #f8f9ff;
+		}
+
+		&.selected {
+			background-color: #f8f9ff;
+			border-color: #483eff;
+			border-width: 1px;
+			margin-right: 10px;
+			align-self: flex-start;
+		}
+
+		.step-two-icon {
+			width: 50px;
+			height: 50px;
+			background-size: cover;
+			margin-right: 10px;
+			border-radius: 10px;
+		}
+
+		.step-two-plan-info {
+			display: flex;
+			flex-direction: column;
+			.step-two-plan-title {
+				color: #022959;
+				font-size: 18px;
+				margin-bottom: 5px;
+				font-family: 'Comic Sans MS';
+				font-weight: 600;
+				margin-top: 0;
+			}
+
+			.step-two-plan-price {
+				color: black;
+				font-size: 14px;
+				font-family: 'Comic Sans MS';
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.step-three-container {
+		width: auto;
+	}
+
+	.form-data-detail {
+		width: auto;
+	}
+
+	.step-five-container {
+		width: auto;
+    
+	}
+
+	.total-row {
+		width: auto;
+    margin-left: 1em;
     margin-right: 1em;
-  }
-
-  .step-two-form-container .step-two-plan-container .step-two-plan-box {
-    width: 100%; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: transparent;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-
-    &:hover {
-      background-color: #f8f9ff;
-    }
-
-    &.selected {
-      background-color: #f8f9ff;
-      border-color: #483eff;
-      border-width: 1px;
-      margin-right: 10px; 
-      align-self: flex-start; 
-    }
-
-    .step-two-icon {
-      width: 50px;
-      height: 50px;
-      background-size: cover;
-      margin-right: 10px; 
-      border-radius: 10px;
-    }
-
-    .step-two-plan-info {
-      display: flex;
-      flex-direction: column;
-      .step-two-plan-title {
-        color: #022959;
-        font-size: 18px;
-        margin-bottom: 5px;
-        font-family: 'Comic Sans MS';
-        font-weight: 600;
-        margin-top: 0;
-      }
-  
-      .step-two-plan-price {
-        color: black;
-        font-size: 14px;
-        font-family: 'Comic Sans MS';
-        margin-top: 5px;
-      }
-    }
-  }
-
-
-
- 
-.step-three-container{
-  width: auto;
-}
-
-.form-data-detail{
-  width: auto;
-
-}
-  
-.step-five-container{
-  width: auto;
-}
-
+	}
 }
