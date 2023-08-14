@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { TextField, Switch } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import '../scss/app.scss';
-import newIcon1 from '../images/icon_1.png';
-import newIcon2 from '../images/icon_2.png';
-import newIcon3 from '../images/icon_3.png';
+import Arcade from '../images/Arcade.png';
+import Advanced from '../images/Advanced.png';
+import Pro from '../images/Pro.png';
 
 const StepMaster = () => {
 	const [addOnsError, setAddOnsError] = useState('');
@@ -26,9 +26,9 @@ const StepMaster = () => {
 	});
 
 	const plans = [
-		{ icon: newIcon1, name: 'Arcade', price: 9 },
-		{ icon: newIcon2, name: 'Advanced', price: 12 },
-		{ icon: newIcon3, name: 'Pro', price: 15 },
+		{ icon: Arcade, name: 'Arcade', price: 9 },
+		{ icon: Advanced, name: 'Advanced', price: 12 },
+		{ icon: Pro, name: 'Pro', price: 15 },
 	];
 
 	const picksAddOns = [
