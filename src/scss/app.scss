@@ -475,6 +475,7 @@ $formHeight: 264px;
 	font-size: 15px;
 	color: #483eff;
 	margin-right: 1em;
+  font-weight: 500;
 }
 
 // Four Step
@@ -685,14 +686,12 @@ $formHeight: 264px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-top: 1px solid #ccc; /* Borde superior para separar el formulario del panel de botones */
+    border-top: 1px solid #ccc; 
     margin-top: auto;
-    background-color: white; /* Fondo blanco para el panel de botones */
+    background-color: white; 
+    margin-right: 0; 
+    margin-left: 0;
   }
-
-	.step-button {
-		width: 100%;
-	}
 
 	.step-button-finished {
 		width: 100%;
@@ -783,7 +782,7 @@ $formHeight: 264px;
   }
 
   .step-two-plan-box {
-    width: 100%; // Ancho total del panel móvil
+    width: auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -837,5 +836,17 @@ $formHeight: 264px;
     }
   }
  
+.step-three-container{
+  width: auto;
+}
+
+.form-data-detail{
+  width: auto;
+
+}
   
+.step-five-container{
+  width: auto;
+}
+
 }

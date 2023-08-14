@@ -280,7 +280,7 @@ const StepMaster = () => {
 									<div className='step-three-title'>{addOn.title}</div>
 									<div className='step-three-subtitle'>{addOn.subtitle}</div>
 								</div>
-								<div className='step-three-price'>{addOn.price}</div>
+								<div className='step-three-price'>${addOn.price}/mo</div>
 							</label>
 						))}
 						{addOnsError && <div className='error-message'>{addOnsError}</div>}
