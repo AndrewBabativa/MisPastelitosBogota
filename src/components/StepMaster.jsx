@@ -424,7 +424,7 @@ const StepMaster = () => {
 						)}
 						{formData.step === 4 ? (
 							<div className='step-button-finished' onClick={handleNextStep}>
-								Finalizar
+								Confirm
 							</div>
 						) : (
 							formData.step < 4 && (
