@@ -346,10 +346,12 @@ input {
 			}
 
 			.step-two-icon {
-				width: 50px;
-				height: 50px;
-				background-size: cover;
-				margin-top: 0.5em;
+				width: 100px;
+				height: 100px;
+				background-size: contain;
+				margin-right: 10px;
+				border-radius: 10px;
+				background-repeat: no-repeat;
 			}
 
 			.step-two-plan-title {
@@ -689,10 +691,8 @@ input {
 		width: 100%;
 		height: 220px; /* Establecer la altura deseada */  
 		background: linear-gradient(45deg, #caacd7 70%, #ffd700, #9B6DC6 10%);
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 0; /* Quitar la curva inferior */
 		overflow: hidden;
-	
+		border-radius: 0;
 		.image-background-one {
 		  display: none;
 		}
@@ -882,11 +882,12 @@ input {
 		}
 
 		.step-two-icon {
-			width: 50px;
-			height: 50px;
-			background-size: cover;
+			width: 60px;
+			height: 60px;
+			background-size: contain;
 			margin-right: 10px;
 			border-radius: 10px;
+			background-repeat: no-repeat;
 		}
 
 		.step-two-plan-info {
